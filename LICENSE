@@ -1,0 +1,99 @@
+MIT License
+
+Copyright (c) 2025 CyberianSun
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Attribution and Credits
+
+SeedFW is built upon the excellent work of several open-source projects and
+methodologies. We are deeply grateful to the following creators:
+
+### PRP (Product Requirement Prompts)
+- **Author**: Rasmus Widing
+- **Repository**: https://github.com/Wirasm/PRPs-agentic-eng
+- **License**: MIT License
+- **Contribution**: PRP methodology, context engineering principles, command
+  structure, and planning approach
+- **Website**: https://www.rasmuswiding.com/
+- **Support**: https://coff.ee/wirasm
+
+### OpenSpec
+- **Author**: Fission AI
+- **Repository**: https://github.com/Fission-AI/OpenSpec
+- **License**: MIT License
+- **Contribution**: Spec-driven development methodology, change tracking system,
+  delta format, and source-of-truth approach
+- **Website**: https://fission.ai/
+
+### CyberSun Framework
+- **Author**: CyberianSun
+- **Repository**: https://github.com/CyberianSun/cybersun-framework
+- **License**: MIT License
+- **Contribution**: Vertical Slice Architecture, AI operational guidelines,
+  file organization principles, and development standards
+
+---
+
+## What SeedFW Adds
+
+While SeedFW is built on these excellent foundations, it adds:
+
+1. **Intent Translator** - Systematic requirement clarification protocol
+2. **Unified Workflow** - Combines all three methodologies into one coherent process
+3. **Consolidated Commands** - 22 commands instead of 51, no duplicates
+4. **GOLDEN_RULES.md** - Unified best practices from all sources
+5. **3-Level Validation** - Comprehensive quality assurance
+6. **Complete Documentation** - Decision flow, architecture guide, workflow guide
+
+---
+
+## Supporting the Original Creators
+
+If you find value in SeedFW, please also support the original creators:
+
+- ☕ **Buy Rasmus a coffee**: https://coff.ee/wirasm
+- 🎯 **Book a workshop with Rasmus**: https://www.rasmuswiding.com/
+- 🌟 **Star OpenSpec**: https://github.com/Fission-AI/OpenSpec
+- 🌟 **Star CyberSun Framework**: https://github.com/CyberianSun/cybersun-framework
+- 🌟 **Star PRP**: https://github.com/Wirasm/PRPs-agentic-eng
+
+---
+
+## License Compatibility
+
+All incorporated projects use the MIT License, which allows for:
+- ✅ Commercial use
+- ✅ Modification
+- ✅ Distribution
+- ✅ Private use
+
+SeedFW maintains the MIT License to ensure the same freedoms for all users.
+
+---
+
+## Disclaimer
+
+The original authors of PRP, OpenSpec, and CyberSun Framework are not
+responsible for SeedFW or any modifications made to their original work.
+SeedFW is an independent project that builds upon their excellent foundations.
+
+

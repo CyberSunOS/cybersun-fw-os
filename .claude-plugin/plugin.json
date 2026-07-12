@@ -1,0 +1,15 @@
+{
+  "name": "seedfw",
+  "displayName": "SeedFW-OS",
+  "description": "AI-assisted development framework: PRP workflow, OpenSpec spec-driven development, Vertical Slice Architecture, 37 commands, and enforcement hooks (build-before-commit, no manual package.json deps, 500-line limit, secret scan).",
+  "author": {
+    "name": "CyberianSun",
+    "url": "https://github.com/CyberianSun"
+  },
+  "homepage": "https://github.com/CyberSunOS/cybersun-fw-os#readme",
+  "repository": "https://github.com/CyberSunOS/cybersun-fw-os",
+  "license": "MIT",
+  "keywords": ["prp", "openspec", "vertical-slice", "workflow", "context-engineering"],
+  "commands": "./.claude/commands",
+  "hooks": "./.claude/hooks/hooks.json"
+}

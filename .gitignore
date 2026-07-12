@@ -1,0 +1,3 @@
+node_modules/
+# dist/ - Commented out to allow GitHub installs
+# The built files need to be in git for npm install from GitHub to work

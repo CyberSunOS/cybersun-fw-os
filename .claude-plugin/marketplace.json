@@ -1,0 +1,18 @@
+{
+  "name": "seedfw",
+  "owner": {
+    "name": "CyberianSun"
+  },
+  "description": "Private marketplace for the SeedFW AI-assisted development framework.",
+  "plugins": [
+    {
+      "name": "seedfw",
+      "displayName": "SeedFW-OS",
+      "source": ".",
+      "strict": false,
+      "description": "PRP workflow, OpenSpec, Vertical Slice Architecture: 37 commands + enforcement hooks.",
+      "category": "workflow",
+      "license": "MIT"
+    }
+  ]
+}

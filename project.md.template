@@ -1,0 +1,390 @@
+# Project Context
+
+**Purpose**: Project-specific conventions, patterns, and context for AI assistants
+
+**Last Updated**: [DATE]
+
+**Project**: [PROJECT_NAME]
+
+---
+
+## 📋 Project Overview
+
+### Basic Information
+- **Name**: [Project Name]
+- **Description**: [Brief description]
+- **Repository**: [GitHub URL]
+- **Tech Stack**: See `TECH_STACK.md` for canonical stack
+- **Architecture**: Vertical Slice Architecture (see `VERTICAL_SLICE_ARCHITECTURE.md`)
+
+### Team
+- **Team Size**: [Number]
+- **Key Contacts**: [Names/Roles]
+- **Communication**: [Slack/Discord/etc]
+
+---
+
+## 🎯 Project-Specific Conventions
+
+### Naming Conventions
+
+**Files**:
+```
+- Components: PascalCase (UserProfile.tsx)
+- Utilities: camelCase (formatDate.ts)
+- Constants: UPPER_SNAKE_CASE (API_BASE_URL.ts)
+- Types: PascalCase with .types.ts suffix (User.types.ts)
+```
+
+**Branches**:
+```
+- Features: feature/[ticket-id]-brief-description
+- Fixes: fix/[ticket-id]-brief-description
+- Refactors: refactor/[area]-brief-description
+```
+
+**Commits**:
+```
+- Format: [Conventional Commits / Custom format]
+- Example: feat(auth): add OAuth2 login flow
+- Reference tickets: Always include ticket ID
+```
+
+### Code Organization
+
+**Directory Structure**:
+```
+src/
+├── features/           # Vertical slices by feature
+│   ├── user-auth/     # All auth-related code
+│   ├── dashboard/     # All dashboard code
+│   └── ...
+├── shared/            # Shared utilities
+│   ├── components/    # Shared UI components
+│   ├── hooks/         # Shared React hooks
+│   └── utils/         # Shared utilities
+└── ...
+```
+
+**Feature Structure** (Vertical Slice):
+```
+features/user-auth/
+├── components/        # UI components
+├── hooks/            # Feature-specific hooks
+├── api/              # API calls
+├── types/            # TypeScript types
+├── utils/            # Feature utilities
+├── tests/            # Feature tests
+└── index.ts          # Public API
+```
+
+---
+
+## 🛠️ Development Workflow
+
+### Local Development
+```bash
+# Start development server
+[command]
+
+# Run tests
+[command]
+
+# Run linter
+[command]
+
+# Build
+[command]
+```
+
+### Testing Strategy
+- **Unit Tests**: [Framework] - Test individual functions/components
+- **Integration Tests**: [Framework] - Test feature interactions
+- **E2E Tests**: [Framework] - Test user workflows
+- **Coverage Target**: [X%]
+
+### Code Review Process
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+---
+
+## 📦 Dependencies
+
+### Core Dependencies
+- **Framework**: [e.g., Next.js 15]
+- **State Management**: [e.g., Zustand]
+- **Styling**: [e.g., Tailwind CSS]
+- **UI Library**: [e.g., shadcn/ui]
+
+### Adding Dependencies
+```bash
+# Use pnpm (or npm/yarn based on project)
+pnpm add [package]
+
+# NEVER edit package.json manually!
+```
+
+---
+
+## 🎨 UI/UX Patterns
+
+### Component Patterns
+```typescript
+// Example: Standard component structure
+export function ComponentName({ prop1, prop2 }: Props) {
+  // 1. Hooks
+  // 2. State
+  // 3. Effects
+  // 4. Handlers
+  // 5. Render
+}
+```
+
+### Styling Conventions
+- **Approach**: [Tailwind / CSS Modules / Styled Components]
+- **Theme**: [Location of theme config]
+- **Responsive**: [Mobile-first / Desktop-first]
+
+### Accessibility
+- **Standards**: WCAG 2.1 Level AA
+- **Testing**: [Tools used]
+- **Required**: Alt text, ARIA labels, keyboard navigation
+
+---
+
+## 🔐 Security Patterns
+
+### Authentication
+- **Method**: [OAuth2 / JWT / Session]
+- **Provider**: [Auth0 / Supabase / Custom]
+- **Storage**: [Where tokens are stored]
+
+### Authorization
+- **Approach**: [RBAC / ABAC / Custom]
+- **Roles**: [List of roles]
+- **Permissions**: [How permissions are checked]
+
+### Data Validation
+- **Input**: [Zod / Yup / Custom]
+- **API**: [Validation approach]
+- **Forms**: [Form validation library]
+
+---
+
+## 🗄️ Data Patterns
+
+### State Management
+- **Global State**: [Redux / Zustand / Context]
+- **Server State**: [React Query / SWR / Custom]
+- **Form State**: [React Hook Form / Formik]
+
+### API Patterns
+```typescript
+// Example: Standard API call pattern
+export async function fetchUser(id: string) {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error('Failed to fetch user');
+  return response.json();
+}
+```
+
+### Database Patterns
+- **ORM**: [Prisma / Drizzle / Custom]
+- **Migrations**: [How migrations are handled]
+- **Seeding**: [How to seed data]
+
+---
+
+## 🧪 Testing Patterns
+
+### Unit Test Example
+```typescript
+// Example: Standard unit test structure
+describe('ComponentName', () => {
+  it('should render correctly', () => {
+    // Arrange
+    // Act
+    // Assert
+  });
+});
+```
+
+### Integration Test Example
+```typescript
+// Example: Standard integration test
+describe('Feature Flow', () => {
+  it('should complete user flow', async () => {
+    // Setup
+    // Execute flow
+    // Verify results
+  });
+});
+```
+
+---
+
+## 📝 Documentation Patterns
+
+### Code Comments
+```typescript
+// Use JSDoc for public APIs
+/**
+ * Fetches user data by ID
+ * @param id - User ID
+ * @returns User object
+ * @throws Error if user not found
+ */
+export async function fetchUser(id: string): Promise<User> {
+  // Implementation
+}
+```
+
+### README Structure
+- Overview
+- Installation
+- Usage
+- API Reference
+- Contributing
+- License
+
+---
+
+## 🚀 Deployment
+
+### Environments
+- **Development**: [URL]
+- **Staging**: [URL]
+- **Production**: [URL]
+
+### Deployment Process
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### CI/CD
+- **Platform**: [GitHub Actions / GitLab CI / Custom]
+- **Triggers**: [When builds run]
+- **Checks**: [What must pass]
+
+---
+
+## 🐛 Debugging
+
+### Common Issues
+1. **Issue**: [Description]
+   - **Solution**: [How to fix]
+
+2. **Issue**: [Description]
+   - **Solution**: [How to fix]
+
+### Debug Tools
+- **Browser**: [Chrome DevTools / Firefox DevTools]
+- **Network**: [Network tab / Proxy]
+- **Performance**: [Lighthouse / Custom]
+
+---
+
+## 📊 Monitoring
+
+### Analytics
+- **Platform**: [PostHog / Google Analytics / Custom]
+- **Events**: [What events are tracked]
+- **Dashboards**: [Where to view data]
+
+### Error Tracking
+- **Platform**: [Sentry / Rollbar / Custom]
+- **Alerts**: [When alerts are sent]
+- **Response**: [How to respond to errors]
+
+### Performance
+- **Metrics**: [Core Web Vitals / Custom]
+- **Monitoring**: [How performance is monitored]
+- **Targets**: [Performance targets]
+
+---
+
+## 🔗 External Integrations
+
+### APIs
+- **API 1**: [Name] - [Purpose] - [Docs URL]
+- **API 2**: [Name] - [Purpose] - [Docs URL]
+
+### Services
+- **Service 1**: [Name] - [Purpose] - [Dashboard URL]
+- **Service 2**: [Name] - [Purpose] - [Dashboard URL]
+
+---
+
+## 📚 Resources
+
+### Documentation
+- **Internal Docs**: [URL]
+- **API Docs**: [URL]
+- **Design System**: [URL]
+
+### Learning Resources
+- **Onboarding**: [Link to onboarding docs]
+- **Tutorials**: [Link to tutorials]
+- **Best Practices**: [Link to best practices]
+
+---
+
+## 🎓 Project-Specific Knowledge
+
+### Domain Knowledge
+- **Key Concepts**: [List important domain concepts]
+- **Business Rules**: [Important business rules]
+- **Edge Cases**: [Known edge cases to handle]
+
+### Technical Decisions
+- **Decision 1**: [Why we chose X over Y]
+- **Decision 2**: [Why we use this pattern]
+- **Decision 3**: [Why we structured it this way]
+
+### Gotchas
+- **Gotcha 1**: [Thing to watch out for]
+- **Gotcha 2**: [Common mistake to avoid]
+- **Gotcha 3**: [Tricky behavior to remember]
+
+---
+
+## 🔄 Change History
+
+### Recent Changes
+- **[DATE]**: [What changed]
+- **[DATE]**: [What changed]
+- **[DATE]**: [What changed]
+
+---
+
+## 📞 Support
+
+### Getting Help
+- **Documentation**: [Where to find docs]
+- **Team Chat**: [Slack/Discord channel]
+- **Issues**: [GitHub Issues / Jira]
+
+### Escalation
+- **Level 1**: [Team member]
+- **Level 2**: [Tech lead]
+- **Level 3**: [Engineering manager]
+
+---
+
+## 📝 Notes
+
+### For AI Assistants
+- Always read this file before starting work
+- Follow all conventions listed here
+- Ask for clarification if conventions conflict
+- Update this file when conventions change
+
+### For Developers
+- Keep this file up to date
+- Document new patterns as they emerge
+- Remove outdated information
+- Review quarterly
+
+
